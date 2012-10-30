@@ -1,6 +1,26 @@
+" Simple vimrc settings
+
+" Since I wrote this around Halloween, and code should be tasty
+colorscheme candycode
+" colorscheme jellybeans
+" colorscheme railscasts
+
+
 set nu
+set wildmode=full
+set wildmenu
+set hlsearch
+
+filetype indent on
+set autoindent
+
+set foldmethod=indent
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                          PEP 8 compliance                         
+" (from http://svn.python.org/projects/python/trunk/Misc/Vim/vimrc) 
+"
 " vimrc file for following the coding standards specified in PEP 7 & 8.
 "
 " To use this file, source it in your own personal .vimrc file (``source
@@ -81,8 +101,8 @@ au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 " a binary file when executing the text file): ``set bomb``
 
 " For full syntax highlighting:
-"``let python_highlight_all=1``
-"``syntax on``
+let python_highlight_all=1
+syntax on
 
 " Automatically indent based on file type: ``filetype indent on``
 " Keep indentation level from previous line: ``set autoindent``

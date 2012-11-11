@@ -14,7 +14,7 @@ set hlsearch
 filetype indent on
 set autoindent
 
-set foldmethod=indent
+"set foldmethod=indent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

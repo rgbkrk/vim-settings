@@ -6,6 +6,7 @@ colorscheme candycode
 " colorscheme railscasts
 
 
+set ts=4
 set nu
 set wildmode=full
 set wildmenu

@@ -7,7 +7,10 @@ set showcmd
 colorscheme candycode
 " colorscheme jellybeans
 " colorscheme railscasts
+" colorscheme darkbone
 
+" Let's play well together OS
+set clipboard=unnamedplus
 
 set ts=4
 set nu
@@ -30,7 +33,7 @@ call pathogen#infect()
 au BufNewFile *.py 0r ~/.vim/skels/skel.py|norm G
 
 
-" The following was imported from 
+" The following was imported from
 "   http://stackoverflow.com/questions/164847/what-is-in-your-vimrc
 
 " Automatically cd into the directory that the file is in
@@ -39,7 +42,7 @@ autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
-"{{{Auto Commands
+"{{{Auto Commands"{{{
 
 " Automatically cd into the directory that the file is in
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
@@ -74,7 +77,7 @@ augroup JumpCursorOnEdit
 augroup END
 
 "}}}
-
+"}}}
 "{{{Misc Settings
 
 " Necesary  for lots of cool vim things
@@ -156,11 +159,11 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-   colorscheme inkpot
+   colorscheme candycode
    " Remove Toolbar
-   set guioptions-=T
+   "set guioptions-=T
    "Terminus is AWESOME
-   set guifont=Terminus\ 9
+   "set guifont=Terminus\ 9
 else
    colorscheme metacosm
 endif
@@ -178,7 +181,7 @@ set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 function! Browser ()
    let line = getline (".")
    let line = matchstr (line, "http[^   ]*")
-   exec "!konqueror ".line
+   exec "!chrome ".line
 endfunction
 
 "}}}
@@ -280,10 +283,6 @@ nnoremap <silent> k gk
 nnoremap <silent> j gj
 inoremap <silent> <Up> <Esc>gka
 inoremap <silent> <Down> <Esc>gja
-
-" Good call Benjie (r for i)
-nnoremap <silent> <Home> i <Esc>r
-nnoremap <silent> <End> a <Esc>r
 
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>

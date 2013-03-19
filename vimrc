@@ -332,3 +332,6 @@ let g:Tex_ViewRule_pdf = "kpdf"
 
 filetype plugin indent on
 syntax on
+
+setlocal spell spelllang=en_us
+

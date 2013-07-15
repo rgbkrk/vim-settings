@@ -4,9 +4,9 @@ set nocompatible
 set showcmd
 
 " Since I wrote this around Halloween, and code should be tasty
-colorscheme candycode
+" colorscheme candycode
 " colorscheme jellybeans
-" colorscheme railscasts
+colorscheme railscasts
 " colorscheme darkbone
 
 " Let's play well together OS
@@ -333,5 +333,5 @@ let g:Tex_ViewRule_pdf = "kpdf"
 filetype plugin indent on
 syntax on
 
-setlocal spell spelllang=en_us
+" setlocal spell spelllang=en_us
 

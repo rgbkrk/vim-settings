@@ -10,7 +10,7 @@ colorscheme railscasts
 " colorscheme darkbone
 
 " Let's play well together OS
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 set ts=4
 set nu
@@ -146,7 +146,7 @@ set incsearch
 set hlsearch
 
 " Since I use linux, I want this
-let g:clipbrdDefaultReg = '+'
+" let g:clipbrdDefaultReg = '+'
 
 " When I close a tab, remove the buffer
 set nohidden
@@ -205,20 +205,20 @@ function! RotateColorTheme()
 endfunction
 " }}}
 
-"{{{ Paste Toggle
-let paste_mode = 0 " 0 = normal, 1 = paste
-
-func! Paste_on_off()
-   if g:paste_mode == 0
-      set paste
-      let g:paste_mode = 1
-   else
-      set nopaste
-      let g:paste_mode = 0
-   endif
-   return
-endfunc
-"}}}
+""{{{ Paste Toggle
+"let paste_mode = 0 " 0 = normal, 1 = paste
+"
+"func! Paste_on_off()
+"   if g:paste_mode == 0
+"      set paste
+"      let g:paste_mode = 1
+"   else
+"      set nopaste
+"      let g:paste_mode = 0
+"   endif
+"   return
+"endfunc
+""}}}
 
 "{{{ Todo List Mode
 
@@ -334,4 +334,17 @@ filetype plugin indent on
 syntax on
 
 " setlocal spell spelllang=en_us
+
+
+" Give me Unicode or give me death
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
 

@@ -3,12 +3,6 @@
 set nocompatible
 set showcmd
 
-" Since I wrote this around Halloween, and code should be tasty
-" colorscheme candycode
-" colorscheme jellybeans
-colorscheme railscasts
-" colorscheme darkbone
-
 " Let's play well together OS
 " set clipboard=unnamedplus
 
@@ -165,7 +159,7 @@ if has("gui_running")
    "Terminus is AWESOME
    "set guifont=Terminus\ 9
 else
-   colorscheme metacosm
+   colorscheme herald
 endif
 
 "Status line gnarliness

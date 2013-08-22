@@ -153,7 +153,7 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-   colorscheme candycode
+   colorscheme desert
    " Remove Toolbar
    "set guioptions-=T
    "Terminus is AWESOME
@@ -185,7 +185,7 @@ let themeindex=0
 function! RotateColorTheme()
    let y = -1
    while y == -1
-      let colorstring = "inkpot#ron#blue#elflord#evening#koehler#murphy#pablo#desert#torte#"
+      let colorstring = "desert#desertEx#herald#inkpot#blackdust#elflord#evening#koehler#murphy#pablo#anotherdark#BusyBee#camo#"
       let x = match( colorstring, "#", g:themeindex )
       let y = match( colorstring, "#", x + 1 )
       let g:themeindex = x + 1
@@ -256,8 +256,8 @@ nnoremap <silent> <C-Left> :tabprevious<CR>
 " New Tab
 nnoremap <silent> <C-t> :tabnew<CR>
 
-" Rotate Color Scheme <F8>
-nnoremap <silent> <F8> :execute RotateColorTheme()<CR>
+" Rotate Color Scheme <F5>
+nnoremap <silent> <F5> :execute RotateColorTheme()<CR>:echo g:colors_name<CR>
 
 " DOS is for fools.
 nnoremap <silent> <F9> :%s/$//g<CR>:%s// /g<CR>

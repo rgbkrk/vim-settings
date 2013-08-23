@@ -153,7 +153,7 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-   colorscheme desert
+   colorscheme darkZ
    " Remove Toolbar
    "set guioptions-=T
    "Terminus is AWESOME
@@ -185,7 +185,8 @@ let themeindex=0
 function! RotateColorTheme()
    let y = -1
    while y == -1
-      let colorstring = "desert#desertEx#brookstream#herald#inkpot#blackdust#elflord#evening#koehler#murphy#pablo#anotherdark#BusyBee#camo#"
+      let allcolor = "BusyBee#Mustang#adaryn#adobe#adrian#advantage#aiseered#anokha#anotherdark#aqua#astroboy#astronaut#asu1dark#autumn#autumn2#autumnleaf#baycomb#bclear#bigbang#biogoo#blackbeauty#blackdust#blacksea#bluegreen#borland#breeze#brookstream#buttercream#calmar256-dark#calmar256-light#calmbreeze#camo#candy#candycode#carvedwood#carvedwoodcool#chela_light#chocolateliquor#clarity#cleanphp#colorer#dante#darkZ#darkblue2#darkbone#darkburn#darker-robin#darkerdesert#darkslategray#darkspectrum#dawn#deepblue#dejavu#denim#desert#desert256#desertEx#dusk#dw_blue#dw_cyan#dw_green#dw_orange#dw_purple#dw_red#dw_yellow#earendel#eclipse#ekvoli#fine_blue#fine_blue2#fnaqevan#fog#freya#fruit#fruity#fu#gaea#gentooish#github#golden#greyhouse#guardian#habilight#herald#hhdgray#impact#imperial#industrial#inkpot#intellij#ironman#jammy#jellybeans#kellys#kib_darktango#leo#lettuce#lilydjwg_dark#liquidcarbon#lucius#luinnar#manuscript#manxome#marklar#maroloccio#maroloccio3#martin_krischik#masmed#matrix#mayansmoke#metacosm#mickeysoft#midnight#midnight2#mizore#molokai#montz#moria#moss#motus#native#navajo-night#navajo#neon#neverness#newspaper#night#night_vision#nightshimmer#no_quarter#northland#nuvola#oceanblack#oceandeep#oceanlight#olive#omen#pacific#papayawhip#paradox#peaksea#peppers#print_bw#psclone#pyte#railscasts#railscasts2#rainbow_neon#rdark#relaxedgreen#robinhood#rootwater#satori#scame#sea#settlemyer#sienna#silent#simpleandfriendly#skittles_dark#slate2#softblue#solarized#sorcerer#soso#spring#summerfruit256#synic#tabula#tango-desert#tango#tango2#taqua#tcsoft#tesla#tir_black#tolerable#torte#twilight#two2tango#vc#vibrantink#vimhut#vividchalk#vylight#winter#wombat#wombat256#wombat256mod#wood#wuye#xemacs#xoria256#zenburn#zendnb#zenesque#zmrok#"
+      let colorstring = "desert#desertEx#darkbone#fu#liquidcarbon#lucius#manuscript#no_quarter#peppers#railscasts#two2tango#blackdust#brookstream#darkZ#"
       let x = match( colorstring, "#", g:themeindex )
       let y = match( colorstring, "#", x + 1 )
       let g:themeindex = x + 1

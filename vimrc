@@ -185,7 +185,7 @@ let themeindex=0
 function! RotateColorTheme()
    let y = -1
    while y == -1
-      let colorstring = "desert#desertEx#herald#inkpot#blackdust#elflord#evening#koehler#murphy#pablo#anotherdark#BusyBee#camo#"
+      let colorstring = "desert#desertEx#brookstream#herald#inkpot#blackdust#elflord#evening#koehler#murphy#pablo#anotherdark#BusyBee#camo#"
       let x = match( colorstring, "#", g:themeindex )
       let y = match( colorstring, "#", x + 1 )
       let g:themeindex = x + 1

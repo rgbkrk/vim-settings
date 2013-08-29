@@ -34,7 +34,7 @@ au BufNewFile *.py 0r ~/.vim/skels/skel.py|norm G
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 
 " Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+"autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 "{{{Auto Commands"{{{
 
@@ -153,7 +153,7 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-   colorscheme darkZ
+   colorscheme fu
    " Remove Toolbar
    "set guioptions-=T
    "Terminus is AWESOME

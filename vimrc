@@ -6,7 +6,7 @@ set showcmd
 " Let's play well together OS
 " set clipboard=unnamedplus
 
-set ts=4
+set ts=2
 set nu
 set wildmode=full
 set wildmenu
@@ -97,8 +97,8 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700

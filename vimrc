@@ -14,6 +14,8 @@ set hlsearch
 
 set ttyfast
 
+call pathogen#infect()
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -21,8 +23,6 @@ set autoindent
 
 " Let's comply with PEP 8
 source $HOME/.vim/pep8.vim
-
-call pathogen#infect()
 
 au BufNewFile *.py 0r ~/.vim/skels/skel.py|norm G
 
